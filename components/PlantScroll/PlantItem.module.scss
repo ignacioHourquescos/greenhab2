@@ -1,0 +1,47 @@
+.container{
+   width:100%;
+   display:flex;
+   justify-content: center;
+   justify-items: center;
+   height:80px;
+   background-color: rgb(232, 244, 255);
+   border-radius: 200px;
+   padding:10px 0;
+
+
+   .image{
+      border-radius:400px;
+      width:80px;
+      height:80px;
+ 
+   }
+
+
+   .data{
+      margin:0 0.5rem ;
+      display:flex;
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+
+      h3{
+      color: rgb(59, 59, 59);
+      font-size: 1.3rem;
+      margin:0;
+      }
+
+      h5{
+         color:rgb(73, 73, 73);
+         margin:0;
+         
+      }
+   }
+}
+
+
+.react-multiple-carousel__arrow{
+   background-color: none !important;
+   min-width:20px !important;
+   min-height:20px !important;
+   color:grey;
+}
