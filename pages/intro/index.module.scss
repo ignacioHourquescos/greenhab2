@@ -3,7 +3,16 @@
    background-color: rgb(217, 223, 217);
    background-image: url('../../public/doodle2.jpg');
    background-size: contain;
-   height: 90vh;
-   margin:0;
-   padding:0;
+   height: 50vh;
+ 
+}
+
+
+.title{
+   margin:0 auto;
+   padding-top:1rem;
+   width:80%;
+   text-align:center;
+   font-family:'Recoleta';
+   font-size:1.5rem;
 }

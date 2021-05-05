@@ -6,13 +6,8 @@ import Image from 'next/image'
 
    return(<>
       <div className={styles.container}>
-      {/* <Image
-        src="/logo.png"
-                height={40}
-        width={120}
 
-      /> */}
-         {/* <h1>Green hab</h1> */}
+          <h1 className={styles.title}>Eleji que plantar</h1>
 
       </div>
    </>)

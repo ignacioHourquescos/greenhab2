@@ -2,12 +2,19 @@
 
 
 .bucket_container{
-   width:19vw;
-   height:19vw;
-   margin:0rem;
-
+   width:17vw;
+   height:17vw;
+   margin:2px;
+   border-radius: 200px;
    background-size: contain;
-   border:1px solid rgb(150, 150, 150);
+   border:0px solid rgb(150, 150, 150);
 
+   border-radius: 50%;
+   background: #dedede;
+   box-shadow: inset 20px 20px 60px #bdbdbd, 
+               inset -20px -20px 60px #ffffff;
+   :first-child{
+      border-radius:200px;
+   }
    
 }

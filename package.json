@@ -8,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "csshake": "^1.5.3",
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
     "next": "^10.0.0",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
     "react-multi-carousel": "^2.6.2"
   }
 }

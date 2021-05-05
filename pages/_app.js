@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
    <AppWrapper>
 
 
-      <Header/>
+      {/* <Header/> */}
       <Component {...pageProps} />
    </AppWrapper>
  

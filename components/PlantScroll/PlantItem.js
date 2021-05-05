@@ -8,10 +8,11 @@ import useAppContext from '../../context/AppContext';
 
    return(<>
       <div className={styles.container} onClick={()=>(desiredPlantHandler(props.plant))}>
-      <Image className={styles.image}
+      <img className={styles.image}
          src={props.img}
-         height={80}
-         width={80}
+     
+         width={70}
+         height={50}
       />
       <div className={styles.data}>
          <h3>{props.name}</h3>

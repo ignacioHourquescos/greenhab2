@@ -8,6 +8,7 @@ const PlantGrid = (props) =>{
    const {plantArray2} =useAppContext();
 
    return(<>
+   {/* <h2 className={styles.title}>Elegi tu propia siembra!</h2> */}
       <div className={styles.grid_container}>
          {plantArray2.map((plant) =>(
             <PlantBucket 

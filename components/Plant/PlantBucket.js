@@ -19,11 +19,7 @@ const PlantBucket = (props) =>{
             {
                !readyToPlant
             ?
-               <Image
-                  src={'/fenolico.jpg'}
-                  height={80}
-                  width={80}
-               />
+            ""
             :
                <Image
                src={props.img}

@@ -24,7 +24,7 @@ const PlantScroll = (props) =>{
             availablePlants.map((plant)=>
                <PlantItem 
                   plant={plant}
-                  name={plant.name} 
+                  name={plant.plant} 
                   harvest={plant.harvest}
                   img={plant.img}
                />)

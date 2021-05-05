@@ -35,10 +35,14 @@ export const AppWrapper = ({ children }) => {
    ])
    //AVAILABLE PLANTS 
    const [availablePlants, setAvailablePlants] = useState([
-      {id:1, img:"/lechuga.png", harvest:"50 dias", plant:"lechuga"},
-      {id:1, img:"/rucula.png", harvest:"50 dias", plant:"rucula"},
-      {id:1, img:"/lechuga.png", harvest:"50 dias", plant:"kale blanco"},
-      {id:1, img:"/lechuga.png", harvest:"50 dias", plant:"acelga"},
+      {id:1, img:"/lechuga.png", harvest:"50 dias", plant:"Lechuga"},
+      {id:1, img:"/rucula.png", harvest:"50 dias", plant:"Rúcula"},
+      {id:1, img:"/espinaca.png", harvest:"50 dias", plant:"Espinaca"},
+      {id:1, img:"/lechugaMorada.jpg", harvest:"50 dias", plant:"Lechuga Morada"},
+      {id:1, img:"/kaleRojo.jpg", harvest:"50 dias", plant:"Kale rojo"},
+
+      {id:1, img:"/kaleBlanco.jpg", harvest:"50 dias", plant:"Kale Blanco"},
+
 
    ])
 

@@ -1,13 +1,25 @@
+@import "../../styles/constants.scss";
+
+.title{
+   margin:0 auto;
+   width:80%;
+   text-align:center;
+   font-family:'Recoleta';
+   font-size:1.5rem;
+}
+
 .grid_container{
-   margin:0 5%;
-   width:90%;
-    padding:5% 0;
-   background-color: rgba(0, 128, 0, 0);
+   margin:0 auto;
+   margin-bottom:0.5rem;
+   width:75%;
+    padding:1.5% 0%;
+   background-color: #dedede;
    display:flex;
    flex-wrap: wrap;
    justify-content: center;
    justify-items: center;
    align-items: center;
    align-content: center;
-   
+   border:3px dotted rgb(161, 161, 161);
+   border-radius:30px;
 }

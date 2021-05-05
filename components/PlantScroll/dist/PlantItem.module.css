@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #e8f4ff;
+  border-radius: 200px;
+  padding: 5px 0;
+}
+.container .image {
+  border-radius: 200px;
+  width: 70px;
+  height: 70px;
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-2px, 0px) rotate(-1deg);
+  }
+}
+.container .data {
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+.container .data h3 {
+  color: #3b3b3b;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.container .data h5 {
+  color: #494949;
+  margin: 0;
+}
+
+.react-multiple-carousel__arrow {
+  background-color: none !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  color: grey;
+}
