@@ -1,17 +1,13 @@
 
 import {useState} from 'react'
 import styles from './index.module.scss'
-import Button from '../components/UI/Button'
+import Button from '../../components/UI/Button'
 import { useRouter } from 'next/router';
+import PlantButton from '../../components/PlantButton/PlantButton'
 
-export default function Home() {
+export default function CheckOut() {
 
    const [onBoarding, setOnBoarding] = useState(false)
-
-   const router = useRouter();
-   const goToOnboarding = () => {
-       router.push('/onboarding');
-   }
 
 
    return (<>
@@ -22,10 +18,10 @@ export default function Home() {
             <Button
                backgroundColor={'transparent'}
                borderColor={'white'} 
-               ><div onClick={goToOnboarding}>Entrar</div></Button>     
+               ><div >Entrar</div></Button>     
          </div>
          
-      
+         <PlantButton/>
       
    </>)
 }

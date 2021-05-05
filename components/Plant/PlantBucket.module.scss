@@ -9,12 +9,14 @@
    background-size: contain;
    border:0px solid rgb(150, 150, 150);
 
-   border-radius: 50%;
-   background: #dedede;
-   box-shadow: inset 20px 20px 60px #bdbdbd, 
-               inset -20px -20px 60px #ffffff;
+   border-radius: 150px;
+   background: #cb8665;
+   box-shadow: inset 4px 4px 8px #724b39,
+               inset -4px -4px 8px #ffc191;
    :first-child{
       border-radius:200px;
+      height:100%;
+      width:100%;
    }
    
 }

@@ -1,32 +1,48 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './PlantButton.module.scss'
 import useAppContext from '../../context/AppContext';
 import Button from '../UI/Button'
-
+import swal from 'sweetalert'
 import emailjs from 'emailjs-com';
 
 const PlantButton= (props) =>{
 
-   const {plantArray2} =useAppContext();
+   const {plantArray2, desiredPlant} =useAppContext();
+   const [finalScreen, setFinalScreen] = useState(false);
 
    function sendEmail(e) {
       e.preventDefault();
      //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-    emailjs.sendForm('service_86uzq1f', 'template_r6ggptl', e.target, 'user_QCQLrpkOhJhKGDFs7I4oR')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      console.log(e.target);
-      console.log(plantArray2);
+     if(desiredPlant==''){
+      swal("Su plantacion esta vacia! Sleccione de las verduras disponibles.");
+      return;
+     }
+     emailjs.sendForm('service_86uzq1f', 'template_r6ggptl', e.target, 'user_QCQLrpkOhJhKGDFs7I4oR')
+       .then((result) => {
+           console.log(result.text);
+       }, (error) => {
+           console.log(error.text);
+       });
+       console.log(props.name.current.value)
+      setFinalScreen(true)
         
     }
   
+    if (finalScreen){
+       return(
+          <div className={styles.container_final_screen}>
+          <h1 className={styles.name}>Siembra recibida!</h1>
+          <h1 className={styles.name}>En unos dias te mandamos novedades </h1>
+          </div>
+       )
+    }
   
     return (
+      <Button className={styles.plant_button} type="submit" value="Send" backgroundColor={'transparent'}>
       <form className="contact-form" onSubmit={sendEmail}>
-        <input type="text" hidden value={plantArray2[0].plant} name="plant1" />
+      <input type="text" hidden value={props.name.current.value} name="name"/>
+         <input type="text" hidden value={props.mail.current.value} mail="mail"/>
+         <input type="text" hidden value={plantArray2[0].plant} name="plant1" />
         <input type="text" hidden value={plantArray2[1].plant} name="plant2" />
         <input type="text" hidden value={plantArray2[2].plant} name="plant3" />
         <input type="text" hidden value={plantArray2[3].plant} name="plant4" />
@@ -46,11 +62,11 @@ const PlantButton= (props) =>{
         <input type="text" hidden value={plantArray2[17].plant} name="plant18" />
         <input type="text" hidden value={plantArray2[18].plant} name="plant19" />
         <input type="text" hidden value={plantArray2[19].plant} name="plant20" />
-  
-        <Button className={styles.plant_button} type="submit" value="Send">
-        <div >Plantar</div>
-        </Button>
+
+        <button className={styles.button} type="submit">Confirmar</button>
+   
       </form>
+      </Button>
     );
 
 

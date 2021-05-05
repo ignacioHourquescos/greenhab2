@@ -1,16 +1,19 @@
 
 ESTILOS
 💹- arreglar flechas
-- arreglar header
-- fondo de furtas y verduras no cubre toda la hoja
+💹- arreglar header
+💹- fondo de furtas y verduras no cubre toda la hoja
 
 LOGICA
-- si no selecciono ningun verdura me tira error
+💹- si no selecciono ningun verdura me tira error
 
-A DESAROLLAR
-- btono plantar ->> pinta pantalla verd y pide nombre y direccion
+
 
 INTRO
-- terminar de definir mejor los mensajes
+💹-terminar de definir mejor los mensajes
 - poner algo del fenolico
 
+
+NEXT STEPS
+----------
+- boton plantar ->> pinta pantalla verd y pide nombre y direccion

@@ -1,0 +1,70 @@
+.container{
+   background-color: rgb(217, 223, 217);
+   background-image: url('../../public/doodle2.jpg');
+   background-size: contain;
+   height: 50vh;
+
+   .button_container{
+      display:flex;
+      width:80%;
+      margin:5% 10%;
+   }
+}
+
+.title{
+   margin:0 auto;
+   padding-top:1rem;
+   width:80%;
+   text-align:center;
+   font-family:'Recoleta';
+   font-size:1.5rem;
+}
+
+
+
+
+.container_checkout{
+   background-color: rgba(54, 59, 54, 0.808);
+   height: 100vh;
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+   justify-content: center;
+   
+
+   .button_container{
+      display:flex;
+      width:80%;
+      margin:5% 10%;
+   }
+
+ .name{
+    background-color: transparent;
+    border:none;
+    width:70%;
+    margin:0 15%;
+    margin-bottom:15%;
+    font-size:1.5rem;
+    border-bottom: 2px solid white;
+    color:rgb(255, 255, 255);
+    ::-webkit-input-placeholder {
+       color: red;
+       font-size:2rem;
+       opacity: 1;
+     }   
+ }
+}
+
+.title{
+   margin:0 auto;
+   padding-top:1rem;
+   width:80%;
+   text-align:center;
+   font-family:'Recoleta';
+   font-size:1.5rem;
+}

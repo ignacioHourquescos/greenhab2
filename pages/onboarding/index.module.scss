@@ -1,0 +1,136 @@
+@import "../../styles/constants.scss";
+
+.container{
+   background: linear-gradient(#4dbc5d, #00a694);
+   background-size: contain;
+   height: 100vh;
+   z-index:100;
+   width:100%;
+   position:fixed;
+   top:0;
+   right:0;
+   margin:0;
+   padding:0;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+
+   // .name{
+   //    background-color: transparent;
+   //    border:none;
+   //    font-size:1rem;
+   //    border-bottom: 2px solid white;
+   //    color:rgb(255, 255, 255);
+   //    ::-webkit-input-placeholder {
+   //       color: red;
+   //       font-size:2rem;
+   //       opacity: 1;
+   //     }   
+   // }
+
+   .name{
+      background-color: transparent;
+      border:none;
+      font-size:1.5rem;
+      color:rgb(255, 255, 255);
+      margin:0 10%;
+      text-align: center;
+      font-family:'Recoleta';
+      margin-bottom:2rem;
+   }
+
+   .name_left{
+      background-color: transparent;
+      border:none;
+      width:65%;
+      font-size:1.1rem;
+      color:rgb(255, 255, 255);
+      margin:0 10%;
+      margin-right:25%;
+      text-align: left;
+      font-family:'Recoleta';
+      margin-bottom:2rem;
+   }
+
+
+   .name_right{
+      width:65%;
+      background-color: transparent;
+      border:none;
+      font-size:1.1rem;
+      color:rgb(255, 255, 255);
+      margin:0 10%;
+      margin-left:25%;
+      text-align: right;
+      font-family:'Recoleta';
+   }
+
+   .author{
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+   }
+
+   h1{
+      
+      padding:1rem;
+      color:white;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family:'Recoleta';
+      margin:0;
+   }
+
+   .slogan{
+      font-family: 'Montserrat', sans-serif;
+      margin:0;
+
+   }
+}
+
+
+
+.container2{
+
+   filter: grayscale(0%);
+   background-size: cover;
+   height: 100vh;
+   z-index:100;
+   width:100%;
+   position:fixed;
+   top:0;
+   right:0;
+   margin:0;
+   padding:0;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+}
+
+.container3{
+   background-color:rgba(29, 28, 28, 0.748);
+   margin:auto;
+   z-index:100;
+   width:100%;
+   position:fixed;
+   top:25%;
+   right:0;
+
+   padding:0;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+   
+   .text{
+      font-family: 'Montserrat', sans-serif;
+      margin:0;
+      color:white;
+      font-size:1.4rem;
+      padding:1rem 0;
+   }
+}

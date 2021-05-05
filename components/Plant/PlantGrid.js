@@ -12,6 +12,7 @@ const PlantGrid = (props) =>{
       <div className={styles.grid_container}>
          {plantArray2.map((plant) =>(
             <PlantBucket 
+               key={plant.id}
                plant={plant} 
                img={plant.img}
             />

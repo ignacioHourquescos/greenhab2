@@ -10,6 +10,11 @@ const useAppContext = () => useContext(AppContext)
 
 export const AppWrapper = ({ children }) => {
 
+   const [emptyGrid, setEmptyGrid] = useState(false);
+
+   const [userData, setUserData] = useState({
+   })
+
    //PLANT GRID 
     const [plantArray2, setPlantArray2] = useState([
       {id:1,   img:'/lechuga.png',  plant:"carne"},
@@ -40,7 +45,6 @@ export const AppWrapper = ({ children }) => {
       {id:1, img:"/espinaca.png", harvest:"50 dias", plant:"Espinaca"},
       {id:1, img:"/lechugaMorada.jpg", harvest:"50 dias", plant:"Lechuga Morada"},
       {id:1, img:"/kaleRojo.jpg", harvest:"50 dias", plant:"Kale rojo"},
-
       {id:1, img:"/kaleBlanco.jpg", harvest:"50 dias", plant:"Kale Blanco"},
 
 
@@ -59,29 +63,51 @@ export const AppWrapper = ({ children }) => {
    //PLNATING DESIRED FUNCTION INTO GRID
    const plantingHandler = (element, desiredPlant) => {
       const position= plantArray2.findIndex((obj => obj.id == element.id));
-      //const modifiedplantArray = plantArray2.splice(0,20,{id:1, plant:"clechuga muyr ruca"})
       let modifiedPlantArray = plantArray2.filter(plant => plant.id != element.id)
       let modifiedPlantArray2 = [...modifiedPlantArray,  {id:element.id, plant:desiredPlant.plant, img:desiredPlant.img}]
       let sortedModifiedArray= modifiedPlantArray2.sort(function(a, b) {
          return parseFloat(a.id) - parseFloat(b.id);
      });
       
-      setPlantArray2(sortedModifiedArray);
-
-
-      console.log(sortedModifiedArray)
-      
-      
+      setPlantArray2(sortedModifiedArray);  
+      setEmptyGrid(false);
+      console.log(sortedModifiedArray)       
    }
+
+
+   //CLEAR PLANT ARRAY
+   const clearPlantArray = () =>{
+      for (const value of plantArray2) {
+         value.plant="";
+         value.img=false;
+       }
+       setEmptyGrid(true);
+       console.log(plantArray2)
+   }
+
+   //SET USER DATA
+   const setUserDataHandler = (userData)=>{
+      setUserData({
+         name:userData.name, 
+      })
+   }
+
+
+
+
 
     return (
         <AppContext.Provider value={
             {
                desiredPlant,
+               emptyGrid,
                plantArray2,
                availablePlants,
+               userData,
                desiredPlantHandler,
-               plantingHandler
+               plantingHandler,
+               clearPlantArray,
+               setUserDataHandler
 
             }}>
             {children}</AppContext.Provider>)
