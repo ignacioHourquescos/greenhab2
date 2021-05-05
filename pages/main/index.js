@@ -7,7 +7,7 @@ import useAppContext from '../../context/AppContext';
 import PlantButton from '../../components/PlantButton/PlantButton'
 import Button from '../../components/UI/Button'
 import { useRouter } from 'next/router'
-import CheckOut from '../checkout'
+
 
 export default function Home() {
    const {plantArray2, desiredPlant, clearPlantArray, userData} =useAppContext();
