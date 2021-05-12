@@ -6,16 +6,18 @@ import PlantScroll from '../../components/PlantScroll/PlantScroll'
 import useAppContext from '../../context/AppContext';
 import PlantButton from '../../components/PlantButton/PlantButton'
 import Button from '../../components/UI/Button'
+import swal from 'sweetalert'
 import { useRouter } from 'next/router'
 
 
 export default function Home() {
-   const {plantArray2, desiredPlant, clearPlantArray, userData} =useAppContext();
+   const {plantArray2, desiredPlant, clearPlantArray, userData, setUserDataHandle, isEmpty} =useAppContext();
 
    const [selectedPlant, setSelectedPlant]=useState();
    const nameRef = useRef('');
    const emailRef = useRef('');
    const [checkout, setCheckout] = useState(false)
+   const [nameRefCurrent , setNameRefCurrent] = useState('')
 
    const plantedGridHandler = (selectedPlant) =>{
       alert("click on bucket")
@@ -27,8 +29,23 @@ export default function Home() {
    }
 
    const clearGridHandler = () =>{clearPlantArray();}
-   const checkoutHandler = () =>{setCheckout(true)}
-   const checkoutHandlerClose = () =>{setCheckout(false)}
+   const checkoutHandler = () =>{
+      if(isEmpty()){
+         swal("Su siembra esta vacia")
+         return;
+      }setCheckout(true)
+      setNameRefCurrent(nameRef.current.value)}
+
+   const checkoutHandlerClose = () =>{
+      setCheckout(false);
+      
+   }
+
+
+   const userDataHandler = () =>{
+      setNameRefCurrent(nameRef.current.value)
+   }
+
 
   return (
     <div className={styles.container}>
@@ -65,7 +82,7 @@ export default function Home() {
                <div style={{position:"fixed", top:"2rem", right:"3rem", fontSize:"2rem", color:"white"}} onClick={checkoutHandlerClose}>X</div>
                <input className={styles.name} ref={nameRef}  placeholder="nombre"></input>
                <input className={styles.name} ref={emailRef} placeholder="mail"></input>            
-               <PlantButton name={nameRef} mail={emailRef} />     
+               <PlantButton onClick={userDataHandler} name={nameRefCurrent} mail={"algo"} />     
                </div>            
             </>
          : 

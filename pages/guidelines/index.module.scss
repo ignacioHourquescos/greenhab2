@@ -1,0 +1,149 @@
+@import "../../styles/constants.scss";
+
+.container{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-items: center;
+   height:100vh;
+
+   .image{
+      margin: 5%;
+      width:90%;
+      height:90%;
+      max-width:400px;
+      max-height:400px;
+
+      @media #{$mobile} {
+         object-fit:contain;
+         margin: 5%;
+         width:90%;
+         height:90%;
+     }
+
+   }
+
+   .care_info{
+      position:absolute;
+      max-width:400px;
+      max-height:400px;
+      margin-top:5%;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-content: center;
+      align-items:center;
+      flex-wrap:wrap;
+      background-color: transparent;
+
+      .care_info_detail{
+         width:30%;
+         height:25%;
+         display:flex;
+         flex-direction: column;
+         justify-items: center;
+         justify-content: center;
+         align-items: center;
+         margin:5%;    
+         background-color: rgba(0, 0, 0, 0.234);
+         font-family: 'Montserrat', sans-serif;
+         color:white;
+         font-size: 0.8rem;
+         padding:5%;
+         border-radius:10px;
+
+         h2{
+            font-family:'Recoleta';
+            margin:0;
+            
+         }
+     
+  
+      }
+   }
+
+}
+
+
+
+
+.container2{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   justify-items: center;
+   align-content: center;
+   align-items:center;
+   height:100vh;
+   background: linear-gradient(#4dbc5d, #00a694);
+   padding: 0 10%;
+   
+   h2{
+      font-family:'Recoleta';
+      margin:0;
+      font-size: 2rem;
+      color:white;  
+   }
+
+   p{
+      font-size: 1.5rem;
+   }
+
+}
+
+
+
+.container3{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   justify-items: center;
+   align-content: center;
+   align-items:center;
+   height:100vh;
+   background-color: rgb(237, 237, 237);
+   padding: 0 10%;
+   
+   h2{
+      font-family:'Recoleta';
+      margin:0;
+      font-size: 2rem;
+      color:rgb(55, 55, 55);  
+   }
+
+   p{
+      font-size: 1.5rem;
+      margin:0;
+   }
+
+
+
+
+}
+
+
+.container4{
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   justify-items: center;
+   align-content: center;
+   align-items:center;
+   height:100vh;
+   background-color: rgb(34, 34, 34);
+   padding: 0 10%;
+   
+   h2{
+      font-family:'Recoleta';
+      margin:0;
+      font-size: 2rem;
+      color:rgb(220, 220, 220);  
+   }
+
+   p{
+      font-size: 1.5rem;
+      margin:0;
+      color:rgb(220, 220, 220);  
+   }
+
+}

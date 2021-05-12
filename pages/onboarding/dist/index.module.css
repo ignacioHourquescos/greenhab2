@@ -29,11 +29,11 @@
 .container .name_left {
   background-color: transparent;
   border: none;
-  width: 65%;
-  font-size: 1.1rem;
+  width: 70%;
+  font-size: 1rem;
   color: white;
-  margin: 0 10%;
-  margin-right: 25%;
+  margin: 0 7%;
+  margin-right: 20%;
   text-align: left;
   font-family: "Recoleta";
   margin-bottom: 2rem;
@@ -42,12 +42,13 @@
   width: 65%;
   background-color: transparent;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
-  margin: 0 10%;
+  margin: 0 7%;
   margin-left: 25%;
   text-align: right;
   font-family: "Recoleta";
+  margin-bottom: 2rem;
 }
 .container .author {
   font-family: "Montserrat", sans-serif;
@@ -105,4 +106,15 @@
   color: white;
   font-size: 1.4rem;
   padding: 1rem 0;
+}
+
+.progress-div {
+  background-color: rgba(173, 40, 40, 0.808);
+  border-radius: 0.5rem;
+}
+
+.progress {
+  background-color: white;
+  height: 10px;
+  border-radius: 1rem;
 }

@@ -48,7 +48,7 @@
   color: white;
 }
 .container_checkout .name ::-webkit-input-placeholder {
-  color: red;
+  color: #f3f3f3;
   font-size: 2rem;
   opacity: 1;
 }

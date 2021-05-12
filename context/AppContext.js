@@ -17,13 +17,13 @@ export const AppWrapper = ({ children }) => {
 
    //PLANT GRID 
     const [plantArray2, setPlantArray2] = useState([
-      {id:1,   img:'/lechuga.png',  plant:"carne"},
-      {id:2,   img:'/lechuga.png',  plant:"pollo"},
+      {id:1,   img:'/lechuga.png',  plant:""},
+      {id:2,   img:'/lechuga.png',  plant:""},
       {id:3,   img:'/lechuga.png',  plant:""},
       {id:4,   img:'/lechuga.png',  plant:""},
       {id:5,   img:'/lechuga.png',  plant:""},
       {id:6,   img:'/lechuga.png',  plant:""},
-      {id:7,   img:'/rucula.png',  plant:""},
+      {id:7,   img:'/rucula.png',   plant:""},
       {id:8,   img:'/lechuga.png',  plant:""},
       {id:9,   img:'/lechuga.png',  plant:""},
       {id:10,  img:'/lechuga.png',  plant:""},
@@ -53,6 +53,14 @@ export const AppWrapper = ({ children }) => {
    //DESIRED PLANT
    const [desiredPlant, setDesiredPlant] = useState('');
 
+
+   //CHECK IF PLATN ARRAY IS EMPTY
+   const isEmpty = () => {
+      for (const value of plantArray2) {
+         if (value.plant!='') return false;
+       }
+       return true;
+   }
    
 
    //SETS THE INDICATED DESIRED PLANT
@@ -107,7 +115,8 @@ export const AppWrapper = ({ children }) => {
                desiredPlantHandler,
                plantingHandler,
                clearPlantArray,
-               setUserDataHandler
+               setUserDataHandler, 
+               isEmpty
 
             }}>
             {children}</AppContext.Provider>)

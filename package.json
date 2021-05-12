@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "antd": "^4.15.4",
     "csshake": "^1.5.3",
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",

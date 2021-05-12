@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
+.container .image {
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+  max-width: 400px;
+  max-height: 400px;
+}
+@media only screen and (max-width : 815px) {
+  .container .image {
+    object-fit: contain;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+  }
+}
+.container .care_info {
+  position: absolute;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+.container .care_info .care_info_detail {
+  width: 30%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+  background-color: rgba(0, 0, 0, 0.234);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5%;
+  border-radius: 10px;
+}
+.container .care_info .care_info_detail h2 {
+  font-family: "Recoleta";
+  margin: 0;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#4dbc5d, #00a694);
+  padding: 0 10%;
+}
+.container2 h2 {
+  font-family: "Recoleta";
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+.container2 p {
+  font-size: 1.5rem;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ededed;
+  padding: 0 10%;
+}
+.container3 h2 {
+  font-family: "Recoleta";
+  margin: 0;
+  font-size: 2rem;
+  color: #373737;
+}
+.container3 p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222222;
+  padding: 0 10%;
+}
+.container4 h2 {
+  font-family: "Recoleta";
+  margin: 0;
+  font-size: 2rem;
+  color: gainsboro;
+}
+.container4 p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: gainsboro;
+}

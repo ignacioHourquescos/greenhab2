@@ -40,8 +40,10 @@ const PlantButton= (props) =>{
     return (
       <Button className={styles.plant_button} type="submit" value="Send" backgroundColor={'transparent'}>
       <form className="contact-form" onSubmit={sendEmail}>
-      <input type="text" hidden value={props.name.current.value} name="name"/>
-         <input type="text" hidden value={props.mail.current.value} mail="mail"/>
+      {/* <input type="text" hidden value={props.name} name="name"/>
+      <input type="text" hidden value={props.mail.current.value} mail="mail"/> */}
+      <input type="text" hidden  mail="mail"/>
+         <input type="text" hidden  mail="mail"/>
          <input type="text" hidden value={plantArray2[0].plant} name="plant1" />
         <input type="text" hidden value={plantArray2[1].plant} name="plant2" />
         <input type="text" hidden value={plantArray2[2].plant} name="plant3" />
