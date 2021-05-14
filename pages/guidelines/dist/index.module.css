@@ -1,24 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.container_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+@media only screen and (max-width : 815px) {
+  .container_main {
+    flex-direction: column;
+  }
+}
+.container_main .title_container {
+  width: 40%;
+}
+@media only screen and (max-width : 815px) {
+  .container_main .title_container {
+    width: 90%;
+  }
+}
+.container_main .title_container p {
+  font-size: 1.2rem;
+}
+.container_main .title {
+  font-family: "Recoleta";
+  margin: 0;
+  font-size: 3rem;
+  margin: auto 0;
+  padding: 0 3rem;
+}
+@media only screen and (max-width : 815px) {
+  .container_main .title {
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
   height: 100vh;
+  width: 50%;
 }
 .container .image {
   margin: 5%;
   width: 90%;
   height: 90%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
 }
 @media only screen and (max-width : 815px) {
   .container .image {
-    object-fit: contain;
-    margin: 5%;
-    width: 90%;
-    height: 90%;
+    margin: 0%;
+    width: 100%;
   }
 }
 .container .care_info {
@@ -62,18 +101,18 @@
   justify-items: center;
   align-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
   background: linear-gradient(#4dbc5d, #00a694);
   padding: 0 10%;
 }
 .container2 h2 {
   font-family: "Recoleta";
   margin: 0;
-  font-size: 2rem;
+  font-size: 4rem;
   color: white;
 }
 .container2 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .container3 {

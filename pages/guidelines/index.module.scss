@@ -1,24 +1,67 @@
 @import "../../styles/constants.scss";
 
+.container_main{
+
+display:flex;
+flex-direction: row;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+height:100vh;
+@media #{$mobile} {
+   flex-direction: column;
+}
+
+.title_container{
+   width:40%;
+   @media #{$mobile} {
+      width:90%;
+   }
+
+   p{
+      font-size: 1.2rem;
+   }
+}
+.title{
+   font-family:'Recoleta';
+   margin:0;
+   font-size: 3rem;
+   margin:auto 0;
+   padding:0 3rem;
+   @media #{$mobile} {
+      font-size: 2rem;
+      margin:0.5rem;
+      padding:0.5rem;
+   }
+
+   
+}
+
+}
+
+
 .container{
    display:flex;
    flex-direction: row;
    justify-content: center;
    justify-items: center;
    height:100vh;
+   width:50%;
 
    .image{
       margin: 5%;
       width:90%;
       height:90%;
-      max-width:400px;
-      max-height:400px;
+      max-width:600px;
+      max-height:600px;
 
       @media #{$mobile} {
-         object-fit:contain;
-         margin: 5%;
-         width:90%;
-         height:90%;
+         // object-fit:contain;
+         margin: 0%;
+         width:100%;
+        
+       
      }
 
    }
@@ -74,19 +117,19 @@
    justify-items: center;
    align-content: center;
    align-items:center;
-   height:100vh;
+   height:50vh;
    background: linear-gradient(#4dbc5d, #00a694);
    padding: 0 10%;
    
    h2{
       font-family:'Recoleta';
       margin:0;
-      font-size: 2rem;
+      font-size: 4rem;
       color:white;  
    }
 
    p{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
    }
 
 }

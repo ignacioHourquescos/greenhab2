@@ -6,32 +6,40 @@ import styles from './index.module.scss'
 export default function Home() {
 
 
-   return (<>       
+   return (<>    
+         <div className={styles.container2}>
+         <h2>Hola!</h2>
+    
+      </div>
+      <div className={styles.container_main}>
+
+
+      <div className={styles.title_container}>
+      <h2 className={styles.title}>Como preservar tus plantas.</h2>
+      <p>Las plantas hidroponicas siguen vivas al momento de llegar a tu casa. 
+         Te recomiendo que las coloques en recipientes de vidrio o plastico que tengan una pequena lamina de agua (idealmente filtrada). 
+         Procura que el sustrato no este sumergido y que solo las puntas de las raices toquen el agua. 
+         De esta forma las poder tener arriba del mostrador de la cocina o en la mesa e ir cosechando las hojas a medida que las necesitas ! 
+         </p>
+         </div>
       <div className={styles.container}>
+         
             <img className={styles.image} src={"./chugaluga.png"}/>
             <div className={styles.care_info}>
                <div className={styles.care_info_detail}>
                   <h2>Recipiente</h2>
-                  Envase de Vidrio o plastico
+                  Envase de Vidrio o plástico
                </div>
                <div className={styles.care_info_detail}>
                <h2>Luz </h2>
                Que las hojas tengan acceso a luz solar</div>
                <div className={styles.care_info_detail}>
-               <h2>Nutricion</h2>
+               <h2>Nutrición</h2>
                2 cm de agua, lo suficente para que se nutran las raices</div>
             </div>
       </div>
+   </div>   
 
-
-      <div className={styles.container2}>
-         <h2>Como preservar tus plantas.</h2>
-         <p>Las plantas hidroponicas siguen vivas al momento de llegar a tu casa. 
-Te recomiendo que las coloques en recipientes de vidrio o plastico que tengan una pequena lamina de agua (idealmente filtrada). 
-Procura que el sustrato no este sumergido y que solo las puntas de las raices toquen el agua. 
-De esta forma las poder tener arriba del mostrador de la cocina o en la mesa e ir cosechando las hojas a medida que las necesitas ! 
-</p>
-      </div>
 
       
 
